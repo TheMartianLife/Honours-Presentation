@@ -48,7 +48,7 @@ Quantitative exploratory study (in three parts) involves calculating **entropy o
 [.background-color: #FF0000]
 [.text: #000000]
 
-Slides about that
+Summarise lit review: impact of social media
 
 ---
 
@@ -64,7 +64,7 @@ Slides about that
 [.background-color: #FF0000]
 [.text: #000000]
 
-Slides about that
+Summarise lit review: motivators and challenges in social media analysis
 
 ---
 
@@ -87,7 +87,26 @@ Slides about that
 [.background-color: #FF0000]
 [.text: #000000]
 
-Slides about that
+Summarise lit review: motivators and challenges in social media trend analysis
+
+---
+
+# Challenges
+
+* Timeliness of analysis and detection
+* Privacy concerns
+* False positives in anomaly detection methods
+* Reliance on other information sources in alternative methods
+* Predicting the future? 🤔
+
+---
+
+# Multidisciplinary challenges
+
+* Very human data; erratic behaviours (**behavioural science**)
+* Sharing between non-fully-connected graph structure... (**graph theory**)
+* ...of nodes with varying levels of transmissiveness (**information diffusion**)
+* Different content and sentiments get shared in different ways (**social contagion**)
 
 ---
 
@@ -103,7 +122,7 @@ Slides about that
 [.background-color: #FF0000]
 [.text: #000000]
 
-Slides about that
+Summarise lit review: analogous applications of methods from other fields
 
 ---
 
@@ -129,22 +148,7 @@ Slides about that
 [.background-color: #FF0000]
 [.text: #000000]
 
-Slides about that
-
----
-
-[.slidenumbers: false]
-[.text: #000000]
-[.footer: [1] Mahbub, de Souza and Williams (2016)]
-
-![](assets/proposal.png)
-
----
-
-[.background-color: #FF0000]
-[.text: #000000]
-
-Slides about that
+Summarise lit review: some have proposed entropy theory, but only in Information Theory form (and still no-one seems to have done it)
 
 ---
 
@@ -158,7 +162,15 @@ Slides about that
 [.background-color: #FF0000]
 [.text: #000000]
 
-Slides about that
+Summarise lit review: why its nearer-to-thermodynamics form may be more suitable
+
+---
+
+[.slidenumbers: false]
+[.text: #000000]
+[.footer: [1] Mahbub, de Souza and Williams (2016)]
+
+![](assets/proposal.png)
 
 ---
 
@@ -216,10 +228,12 @@ def shannon(s):
 
 ---
 
-[.background-color: #FF0000]
-[.text: #000000]
+# Entropy over time
 
-Slides about that
+* Reveals descriptive statistical measures about a set of data
+* But also measures diversity and internal inconsistency
+* Takes focus away from upper and lower bounds—or even ranges—in favour of changes in internal distribution that may be more informative
+* Is in some cases sufficient to adapt analysis into Markov-model-based prediction
 
 ---
 
@@ -323,6 +337,24 @@ This can help identify new context or anomalous trends.
 
 ---
 
+# Why Twitter?
+
+* Rapid generation of content, rapid decline in interest => easily observable trends
+* Discrete content size easier to analyse => more easily verifiable datasets
+* Reasonable breadth of functionality in API, well-established tools for research => easier to perform and recreate studies
+
+---
+
+# Twitter Content
+
+* Posts of maximum 140 characters (**tweets**)
+* Accompanying media of one video or up to four images
+* May include hashtags, stock tickers, tagged users
+* Metadata includes time of posting, engagements, location
+* Sharing posts can be done verbatim (**retweets**) or with added commentary (**quote tweets**)
+
+---
+
 [.slidenumbers: false]
 [.hide-footer]
 
@@ -369,7 +401,7 @@ This can help identify new context or anomalous trends.
 [.background-color: #FF0000]
 [.text: #000000]
 
-Studies that use Twarc
+Summarise lit review: studies that use Twarc
 
 ---
 
@@ -600,17 +632,37 @@ for file_handle in output_files.keys():
 
 ---
 
-[.background-color: #FF0000]
-[.text: #000000]
+[.slidenumbers: false]
+[.hide-footer]
 
-Slides about that
+```python
+# entropy.py (simplified example)
+import csv, bumpy
+
+output_file = open(OUTPUT_FILENAME, 'w+')
+csv_writer = csv.writer(output_file, delimiter=',')
+cumulative_likes = 0
+likes = []
+
+for input_filename in INPUT_FILENAMES:
+	input_file = open(input_filename, 'r')
+	csv_reader = csv.reader(input_file, delimiter=',')
+
+	likes += [float(row[1]) for row in csv_reader]
+	date = input_filename[23:33] # YYYY-MM-DD
+	cumulative_likes += numpy.sum(likes)
+	csv_writer.writerow([date, str(entropy(likes)), str(cumulative_likes)])
+
+	input_file.close()
+
+output_file.close()
+```
 
 ---
 
-[.background-color: #FF0000]
-[.text: #000000]
-
-Slides about that
+# [fit] Phase 2: Cohesive topic
+# &
+# [fit] Phase 3: Evolving topic
 
 ---
 
