@@ -76,10 +76,59 @@ Quantitative exploratory study involves calculating **entropy over time** in pre
 
 ---
 
-[.background-color: #FF0000]
-[.text: #000000]
+[.slidenumbers: false]
+[.hide-footer]
 
-Summarise lit review: impact of social media
+# Social Media Usage
+
+* Hundreds of platforms, growing by the year[^1]
+* Some count users in the millions, with the most popular reaching over a billion users[^2]
+* From 2005-2015 social media usage rose tenfold in the United States alone[^3]
+
+[^1]: Kasemsap (2019)
+
+[^2]: Kane (2015)
+
+[^3]: Perrin (2015)
+
+---
+
+[.slidenumbers: false]
+[.hide-footer]
+
+# Social Media Usage
+
+* Of the ~4.5 billion internet users worldwide, an estimated 3.5 billion are users of social media[^4]
+* Social media usage spans demographics[^5]
+* Includes both individuals and groups and businesses of all sizes[^6]
+
+[^4]: Hootsuite (2019)
+
+[^5]: Perrin (2015)
+
+[^6]: Kaplan and Haenlein (2010)
+
+---
+
+[.slidenumbers: false]
+[.hide-footer]
+
+# Social Media Usage
+
+* Not just one platform; most use two or more[^7]
+* Critical to maintaining a competitive edge in business[^8]
+* Has fundamentally changed the way humanity communicates[^9]
+
+[^7]: Zhao, Lampe and Ellison (2016)
+
+[^8]: Chui, Manyika, Bughin, Dobbs, Roxburgh, Sarrazin, Sands and Westergren (2012)
+
+[^9]: Edosomwan, Prakasan, Kouame, Watson and Seymour (2011)
+
+---
+
+### "_[Social media has] penetrated deeply into the mechanics of everyday life, affecting people’s informal interactions, as well as institutional structures and professional routines._"
+--Van Dijck and Poell (2013)
 
 ---
 
@@ -177,25 +226,23 @@ Summarise lit review: analogous applications of methods from other fields
 
 ---
 
-[.background-color: #FF0000]
-[.text: #000000]
-
-Summarise lit review: some have proposed entropy theory, but only in Information Theory form (and still no-one seems to have done it)
-
----
-
-[.background-color: #FF0000]
-[.text: #000000]
-
-Summarise lit review: why its nearer-to-thermodynamics form may be more suitable
-
----
-
 [.slidenumbers: false]
-[.text: #000000]
-[.footer: Source: Mahbub, de Souza and Williams 2016]
+[.hide-footer]
 
-![](assets/proposal.png)
+**Others have mentioned the use of entropy theory in social media research before** but 
+
+1. only in  Information Theory[^8], or
+2. as applied to analysis of the _network structure_[^9] of a platform community.
+
+[^8]: see Park, Huh, Oh and Han 2012, Matei and Bruno 2015, Tsou 2015, Zhou, Huang, Zhao, Shi, Liang and Fan 2015, speaking of Shannon 1948
+
+[^9]: see Ngoc, Echizen, Komei and Yoshiura 2010, Gao, Shi and Chen 2015, Zhi-Xiao, Ze-chao, Xiao-fang and Jin-hui 2016, and more
+
+---
+
+[.footer: Source: www.thecomputerchurch.org historical collection]
+
+![75%](assets/bell.jpg)
 
 ---
 
@@ -250,6 +297,14 @@ def shannon(s):
         entropy += p_i * math.log(p_i)
     return -entropy
 ```
+
+---
+
+[.slidenumbers: false]
+[.text: #000000]
+[.footer: Source: Mahbub, de Souza and Williams 2016]
+
+![](assets/proposal.png)
 
 ---
 
@@ -351,12 +406,20 @@ This can help identify new context or **anomalous trends**.
 ---
 
 [.text-emphasis: #FFFFFF]
+[.slidenumbers: false]
+[.hide-footer]
 
 # Why Twitter?
 
-* Rapid generation of content, rapid decline in interest => *easily observable trends*
-* Discrete content size easier to analyse => *more easily verifiable datasets*
-* Reasonable breadth of functionality in API, well-established tools for research => *easier to get data, perform and recreate studies*
+* Rapid generation of content, rapid decline in interest[^10] => *easily observable trends*
+* Discrete content size easier to analyse[^11] => *more easily verifiable datasets*
+* Reasonable breadth of functionality in API, well-established tools for research[^12] => *easier to get data, perform and recreate studies*
+
+[^10]: Sapountzi and Psannis 2018
+
+[^11]: Schmidt 2012
+
+[^12]: Zimmer and Proferes 2014
 
 ---
 
@@ -417,12 +480,12 @@ This can help identify new context or **anomalous trends**.
 
 # Why Twarc?
 
-* many researchers have used it for studies before, establishing its robustness as a tool[^1]
-* many have made tools for analysis and visualisation that work with it[^2], so integration issues are not so worrisome
+* many researchers have used it for studies before, establishing its robustness as a tool[^13]
+* many have made tools for analysis and visualisation that work with it[^14], so integration issues are not so worrisome
 
-[^1]: see Milligan, Ruest and Lin 2016, Ruest and Milligan 2016, Juanals and Minel 2017, Palmer, Robinson and Phillips 2017, Pinter, Goldman and Novotny 2017, Aruguete and Calvo 2018, Darwish 2018, Kalmar, Stevens and Worby 2018, and more
+[^13]: see Milligan, Ruest and Lin 2016, Ruest and Milligan 2016, Juanals and Minel 2017, Palmer, Robinson and Phillips 2017, Pinter, Goldman and Novotny 2017, Aruguete and Calvo 2018, Darwish 2018, Kalmar, Stevens and Worby 2018, and more
 
-[^2]: examples such as [Twarc Report by Peter Binkley](https://github.com/pbinkley/twarc-report) and [Twarc Cloud by Justin Littman](https://github.com/justinlittman/twarc-cloud)
+[^14]: examples such as [Twarc Report by Peter Binkley](https://github.com/pbinkley/twarc-report) and [Twarc Cloud by Justin Littman](https://github.com/justinlittman/twarc-cloud)
 
 ---
 
@@ -685,7 +748,7 @@ output_file.close()
 
 ---
 
-# [fit] Phase 2: Cohesive topic
+# [fit] Phase 2: Discrete topic
 # &
 # [fit] Phase 3: Evolving topic
 
@@ -804,16 +867,39 @@ I theorised that the patterns to emerge would be two-fold:
 
 # References
 
-1. Mahbub, M.S., de Souza, P. and Williams, R., 2017. Describing environmental phenomena variation using entropy theory. _International Journal of Data Science and Analytics_, 3(1), pp.49-60.
-2. Mahbub, M.S., de Souza, P. and Williams, R., 2019. Understanding Environmental Changes Using Statistical Mechanics. _Annals of Data Science_, pp.1-13.
-3. Tsou, M.H., 2015. Research challenges and opportunities in mapping social media and Big Data. _Cartography and Geographic Information Science_, 42(sup1), pp.70-74.
-4. Milligan, I., Ruest, N. and Lin, J.: 2016, Content selection and curation for web archiving: The gatekeepers vs. the masses, _Proceedings of the 16th ACM/IEEE-CS on Joint Conference on Digital Libraries_, ACM, pp. 107–110.
-5. Ruest, N. and Milligan, I.: 2016, An open-source strategy for documenting events: The case study of the 42nd canadian federal election on twitter, _Code4Lib_ 32.
-6. Juanals, B. and Minel, J.-L.: 2017, Analysing cultural events on twitter, _International Conference on Computational Collective Intelligence_, Springer, pp. 376–385.
-7. Pinter, A. T., Goldman, B. and Novotny, E.: 2017, Pennsylvania perspectives of the 2016 election: A project to collect web and social media content around significant societal events, _Pennsylvania Libraries: Research & Practice_ 5(2), 96–106.
-8. Aruguete, N. and Calvo, E.: 2018, Time to #protest: Selective exposure, cascading activation, and framing in social media, _Journal of Communication_ 68(3), 480–502.
-9. Darwish, K.: 2018, To kavanaugh or not to kavanaugh: That is the polarizing question, _arXiv preprint arXiv:1810.06687_ p. 01.
-10. Kalmar, I., Stevens, C. and Worby, N.: 2018, Twitter, gab, and racism: the case of the soros myth, _Proceedings of the 9th International Conference on Social Media and Society_, ACM, pp. 330–334.
+* Aruguete, N. and Calvo, E.: 2018, Time to #protest: Selective exposure, cascading activation, and framing in social media, _Journal of Communication_ 68(3), 480–502.
+* Chui, M., Manyika, J., Bughin, J., Dobbs, R., Roxburgh, C., Sarrazin, H., Sands, G. and Westergren, M.: 2012, The social economy: Unlocking value and productivity through social technologies. [https://www.mckinsey.com/industries/high-tech/our-insights/ the-social-economy](https://www.mckinsey.com/industries/high-tech/our-insights/ the-social-economy) [Accessed 18 May 2019]. 
+* Darwish, K.: 2018, To kavanaugh or not to kavanaugh: That is the polarizing question, _arXiv preprint arXiv:1810.06687_ p. 01.
+* Edosomwan, S., Prakasan, S. K., Kouame, D., Watson, J. and Seymour, T.: 2011, The history of social media and its impact on business, _Journal of Applied Management and entrepreneurship_ 16(3), 79–91. 
+* Gao, Z., Shi, Y. and Chen, S.: 2015, Measures of node centrality in mobile social networks, _International Journal of Modern Physics_ C 26(09).
+* Hootsuite: 2018, Hootsuite’s social media barometer report. [https://hootsuite.com/resources/all-future_of_social-digital_in_2019-glo-en-ca-digital_in_2019-q1_2019](https://hootsuite.com/resources/barometer-2018-global?utm_campaign=all-future_of_social-digital_in_2019-glo-en-ca-digital_in_2019-q1_2019) [Accessed 18 May 2018]. 
+* Juanals, B. and Minel, J.-L.: 2017, Analysing cultural events on twitter, _International Conference on Computational Collective Intelligence_, Springer, pp. 376–385.
+* Kalmar, I., Stevens, C. and Worby, N.: 2018, Twitter, gab, and racism: the case of the soros myth, _Proceedings of the 9th International Conference on Social Media and Society_, ACM, pp. 330–334.
+* Kane, G. C.: 2015, Enterprise social media: Current capabilities and future possibilities., _MIS Quarterly Executive_ 14(1). 
+* Kaplan, A. M. and Haenlein, M.: 2010, Users of the world, unite! the challenges and opportunities of social media, _Business horizons_ 53(1), 59–68. 
+* Kasemsap, K.: 2019, Professional and business applications of social media platforms, Social Entrepreneurship: Concepts, Methodologies, Tools, and Applications, _IGI Global_, pp. 824– 847. 
+* Mahbub, M.S., de Souza, P. and Williams, R., 2017. Describing environmental phenomena variation using entropy theory. _International Journal of Data Science and Analytics_, 3(1), pp.49-60.
+* Mahbub, M.S., de Souza, P. and Williams, R., 2019. Understanding Environmental Changes Using Statistical Mechanics. _Annals of Data Science_, pp.1-13.
+* Matei, S. A. and Bruno, R. J.: 2015, Pareto’s 80/20 law and social differentiation: A social entropy perspective, _Public Relations Review_ 41(2), 178–186.
+
+---
+
+# References
+
+* Milligan, I., Ruest, N. and Lin, J.: 2016, Content selection and curation for web archiving: The gatekeepers vs. the masses, _Proceedings of the 16th ACM/IEEE-CS on Joint Conference on Digital Libraries_, ACM, pp. 107–110.
+* Ngoc, T. H., Echizen, I., Komei, K. and Yoshiura, H.: 2010, New approach to quantification of privacy on social network sites, 2010 24th _IEEE International Conference on Advanced Information Networking and Applications_, IEEE, pp. 556–564.
+* Park, S.-H., Huh, S.-Y., Oh, W. and Han, S. P.: 2012, A social network-based inference model for validating customer profile data., _MIS quarterly_ 36(4).
+* Perrin, A.: 2015, Social media usage: 2005-2015, _PEW Research Center Report_. 
+* Pinter, A. T., Goldman, B. and Novotny, E.: 2017, Pennsylvania perspectives of the 2016 election: A project to collect web and social media content around significant societal events, _Pennsylvania Libraries: Research & Practice_ 5(2), 96–106.
+* Ruest, N. and Milligan, I.: 2016, An open-source strategy for documenting events: The case study of the 42nd canadian federal election on twitter, _Code4Lib_ 32.
+* Sapountzi, A. and Psannis, K. E.: 2018, Social networking data analysis tools & challenges, _Future Generation Computer Systems_ 86, 893–913.
+* Schmidt, C. W.: 2012, Trending now: using social media to predict and track disease outbreaks.
+* Tsou, M.H., 2015. Research challenges and opportunities in mapping social media and Big Data. _Cartography and Geographic Information Science_, 42(sup1), pp.70-74.
+* Van Dijck, J. and Poell, T.: 2013, Understanding social media logic, _Media and communication_ 1(1), 2–14. 
+* Zhao, X., Lampe, C. and Ellison, N. B.: 2016, The social media ecology: User perceptions, strategies and challenges, _Proceedings of the 2016 CHI conference on human factors in computing systems_, ACM, pp. 89–100. 
+* Zhi-Xiao, W., Ze-chao, L., Xiao-fang, D. and Jin-hui, T.: 2016, Overlapping community detection based on node location analysis, _Knowledge-Based Systems_ 105, 225–235.
+* Zhou, F., Huang, W., Zhao, Y., Shi, Y., Liang, X. and Fan, X.: 2015, Entvis: a visual analytic tool for entropy-based network traffic anomaly detection, _IEEE Computer Graphics and Applications_ 35(6), 42–50.
+* Zimmer, M. and Proferes, N. J.: 2014, A topology of twitter research: disciplines, methods, and ethics, _ASLIB Journal of Information Management_ 66(3), 250–261.
 
 ---
 
