@@ -7,8 +7,11 @@ footer: A BICT Honours project by Mars Geldard, under the supervision of Profess
 [.slidenumbers: false]
 [.hide-footer]
 
+<br>
 # [fit] Insights into **Social Media** Data: 
 # [fit] a new formalism inspired in **Thermodynamics**
+<br>
+![inline 143%](assets/qr.jpg)
 
 ![](assets/thermo.jpg)
 
@@ -141,14 +144,60 @@ Quantitative exploratory study involves calculating **entropy over time** in pre
 
 ---
 
-[.background-color: #FF0000]
-[.text: #000000]
+[.slidenumbers: false]
+[.hide-footer]
 
-Summarise lit review: motivators and challenges in social media analysis
+# The Motivation
+
+The **growing use** of and concern about social media—matched by a necessity for their (often free) platform providers to **earn money** and for external parties to **leverage the technology**—has spawned great interest in developing methods to **effectively analyse and gain insight** from its content.[^10]
+
+[^10]: He, Shen, Tian, Li, Akula, Yan and Tao (2015)
+
+---
+
+# The Goals
+
+* Understand the network structure of platforms, how people connect (**social network analysis**, **behavioural research**)
+* Understand the content being generated and shared among platforms, how people react to and propagate it (**content and sentiment analysis**, **information diffusion theories**)
+* Understand where particular interest comes from, the determinants and effects of popular topics (**topic analysis**, **trend analysis**)
 
 ---
 
 [.slidenumbers: false]
+[.hide-footer]
+
+# The Challenges
+
+* Social media generates content in **enormous quantity**, at great speed[^11]
+* Semi-structured or **unstructed** data with **mixed media** necessary to context[^12]
+* Metadata is sparse and **not always accurate**[^13]
+
+[^11]: Brooker, Barnett, Cribbin and Sharma (2016)
+
+[^12]: Mayeh, Scheepers and Valos (2012) and Bello-Orgaz, Jung and Camacho (2016)
+
+[^13]: Halasz (2019)
+
+---
+
+[.slidenumbers: false]
+[.hide-footer]
+
+# The Challenges
+
+* Hardest of NLP challenges; full of jargon, context- and culturally-specific terms[^14]
+* Data is harder to get over time due to platforms commoditising data[^15] and increasing privacy controls[^16]
+
+[^14]: Dou, Wang, Skau, Ribarsky and Zhou (2012)
+
+[^15]: Hogan (2016) and Felt (2016)
+
+[^16]: Weller and Kinder-Kurlanda (2015)
+
+---
+
+[.slidenumbers: false]
+[.text: #FFFFFF]
 [.footer: Cibele Montez Halasz, Senior ML Engineer from Twitter, speaking at Reinforce Conf (Budapest, 2019)]
 
 ![](assets/reinforce.jpg)
@@ -164,20 +213,51 @@ Summarise lit review: motivators and challenges in social media analysis
 
 ---
 
-[.background-color: #FF0000]
-[.text: #000000]
-
-Summarise lit review: motivators and challenges in social media trend analysis
+![55%](assets/trend.png)
 
 ---
 
+# Why?
+
+* Optimise marketing and outreach campaigns
+* Understand content consumption
+* Observe cultural change over time
+* Jump on bandwagons
+* Prevent impending harmful content trends
+
+---
+
+![](assets/reqs.png)
+
+---
+
+[.slidenumbers: false]
+[.hide-footer]
+
 # Challenges
 
-* Timeliness of analysis and detection
 * Privacy concerns
-* False positives in anomaly detection methods
-* Reliance on other information sources in alternative methods
+* False positives in anomaly detection-based methods[^17]
+* Reliance on other information sources in alternative methods[^18]
+
+[^17]: Altshuler, Pan and Pentland (2012)
+
+[^18]: Sapountzi and Psannis (2018)
+
+---
+
+[.slidenumbers: false]
+[.hide-footer]
+
+# Challenges
+
+* Timeliness requirements for analysis and detection[^19]
+* Topic evolution over time[^20]
 * Predicting the future? 🤔
+
+[^19]: Figueiredo, Almeida, Goncalves and Benevenuto (2016)
+
+[^20]: Qian, Zhang, Xu and Shao (2015) and Stieglitz, Mirbabaie, Ross and Neuberger (2018)
 
 ---
 
@@ -200,20 +280,39 @@ Summarise lit review: motivators and challenges in social media trend analysis
 
 ---
 
-[.background-color: #FF0000]
-[.text: #000000]
+[.footer: *Manovich (2011),  Schroeder (2014), Weller and Kinder-Kurlanda (2015) and Sloan and QuanHaase (2017)]
 
-Summarise lit review: analogous applications of methods from other fields
+# [fit] Social media analysis 
+# [fit] requires some new
+# [fit] ways of thinking!*
 
 ---
 
-# The Gist
+## Novel applications of cross-disciplinary methods
 
-* Social Media use has swept across the globe, impacting the way we communicate, conduct business and view society
+* Social media trends as contagion theory from **Virology** in Medicine[^21]
+* Social media trends as the **Technology Adoption** curve from Information Diffusion Theory[^22]
 
-* Analysing behaviour on Social Media is seen as important to understanding the opportunities and risks it presents
+[^21]: see Adar and Adamic (2005), Gomez-Rodriguez, Leskovec and Krause (2012), Cannarella and Spechler (2014), and more
 
-* Where current methods targeting Social Media have been lacking, a small group of studies have shown varying success in applying methods of analysis from other fields
+[^22]: Chang (2010)
+
+---
+
+## Novel applications of cross-disciplinary methods
+
+* Social media behaviours observed as sound (**Data Sonification**) to aid in anomaly detection[^24]
+* Social media network interactions as **Evolutionary Game Theory** from Evolutionary Biology[^25]
+
+[^23]: Jamieson and Boase (2017)
+
+[^24]: Liu, Wang, Johnson and Zhao (2015),
+
+---
+
+[.header: text-scale(3)]
+
+# 🤯
 
 ---
 
@@ -231,12 +330,12 @@ Summarise lit review: analogous applications of methods from other fields
 
 **Others have mentioned the use of entropy theory in social media research before** but 
 
-1. only in  Information Theory[^8], or
-2. as applied to analysis of the _network structure_[^9] of a platform community.
+1. only in  Information Theory[^25], or
+2. as applied to analysis of the _network structure_[^26] of a platform community.
 
-[^8]: see Park, Huh, Oh and Han 2012, Matei and Bruno 2015, Tsou 2015, Zhou, Huang, Zhao, Shi, Liang and Fan 2015, speaking of Shannon 1948
+[^25]: see Park, Huh, Oh and Han 2012, Matei and Bruno 2015, Tsou 2015, Zhou, Huang, Zhao, Shi, Liang and Fan 2015, speaking of Shannon 1948
 
-[^9]: see Ngoc, Echizen, Komei and Yoshiura 2010, Gao, Shi and Chen 2015, Zhi-Xiao, Ze-chao, Xiao-fang and Jin-hui 2016, and more
+[^26]: see Ngoc, Echizen, Komei and Yoshiura 2010, Gao, Shi and Chen 2015, Zhi-Xiao, Ze-chao, Xiao-fang and Jin-hui 2016, and more
 
 ---
 
@@ -314,6 +413,23 @@ def shannon(s):
 * But also measures internal diversity and inconsistency
 * Takes focus away from upper and lower bounds—or even ranges—in favour of changes in internal distribution that may be more informative
 * Is in some cases sufficient to adapt analysis into Markov-model-based prediction
+
+
+---
+
+# The Gist
+
+* Social Media use has swept across the globe, impacting the way we communicate, conduct business and view society
+
+* Analysing behaviour on Social Media is seen as important to understanding the opportunities and risks it presents
+
+* Where current methods targeting Social Media have been lacking, a small group of studies have shown varying success in applying methods of analysis from other fields
+
+---
+
+# The Gist
+
+* This study will investigate the feasibility of measures analogous of Entropy over time for trend detection, analysis and prediction
 
 ---
 
@@ -411,15 +527,15 @@ This can help identify new context or **anomalous trends**.
 
 # Why Twitter?
 
-* Rapid generation of content, rapid decline in interest[^10] => *easily observable trends*
-* Discrete content size easier to analyse[^11] => *more easily verifiable datasets*
-* Reasonable breadth of functionality in API, well-established tools for research[^12] => *easier to get data, perform and recreate studies*
+* Rapid generation of content, rapid decline in interest[^27] => *easily observable trends*
+* Discrete content size easier to analyse[^28] => *more easily verifiable datasets*
+* Reasonable breadth of functionality in API, well-established tools for research[^29] => *easier to get data, perform and recreate studies*
 
-[^10]: Sapountzi and Psannis 2018
+[^27]: Sapountzi and Psannis 2018
 
-[^11]: Schmidt 2012
+[^28]: Schmidt 2012
 
-[^12]: Zimmer and Proferes 2014
+[^29]: Zimmer and Proferes 2014
 
 ---
 
@@ -480,12 +596,12 @@ This can help identify new context or **anomalous trends**.
 
 # Why Twarc?
 
-* many researchers have used it for studies before, establishing its robustness as a tool[^13]
-* many have made tools for analysis and visualisation that work with it[^14], so integration issues are not so worrisome
+* many researchers have used it for studies before, establishing its robustness as a tool[^30]
+* many have made tools for analysis and visualisation that work with it[^31], so integration issues are not so worrisome
 
-[^13]: see Milligan, Ruest and Lin 2016, Ruest and Milligan 2016, Juanals and Minel 2017, Palmer, Robinson and Phillips 2017, Pinter, Goldman and Novotny 2017, Aruguete and Calvo 2018, Darwish 2018, Kalmar, Stevens and Worby 2018, and more
+[^30]: see Milligan, Ruest and Lin 2016, Ruest and Milligan 2016, Juanals and Minel 2017, Palmer, Robinson and Phillips 2017, Pinter, Goldman and Novotny 2017, Aruguete and Calvo 2018, Darwish 2018, Kalmar, Stevens and Worby 2018, and more
 
-[^14]: examples such as [Twarc Report by Peter Binkley](https://github.com/pbinkley/twarc-report) and [Twarc Cloud by Justin Littman](https://github.com/justinlittman/twarc-cloud)
+[^31]: examples such as [Twarc Report by Peter Binkley](https://github.com/pbinkley/twarc-report) and [Twarc Cloud by Justin Littman](https://github.com/justinlittman/twarc-cloud)
 
 ---
 
@@ -867,35 +983,64 @@ I theorised that the patterns to emerge would be two-fold:
 
 # References
 
+* Adar, E. and Adamic, L. A.: 2005, Tracking information epidemics in blogspace, Proceedings of the 2005 IEEE/WIC/ACM international conference on web intelligence, _IEEE Computer Society_, pp. 207–214. 
+* Altshuler, Y., Pan, W. and Pentland, A. S.: 2012, Trends prediction using social diffusion models, International Conference on Social Computing, _Behavioral-Cultural Modeling and Prediction_, Springer, pp. 97–104. 
 * Aruguete, N. and Calvo, E.: 2018, Time to #protest: Selective exposure, cascading activation, and framing in social media, _Journal of Communication_ 68(3), 480–502.
+* Bello-Orgaz, G., Jung, J. J. and Camacho, D.: 2016, Social big data: Recent achievements and new challenges, _Information Fusion_ 28, 45–59. 
+* Cannarella, J. and Spechler, J. A.: 2014, Epidemiological modeling of online social network dynamics, _arXiv preprint arXiv:1401.4208_. 
+* Chang, H.-C.: 2010, A new perspective on twitter hashtag use: Diffusion of innovation theory, _Proceedings of the American Society for Information Science and Technology_ 47(1), 1–4. 
 * Chui, M., Manyika, J., Bughin, J., Dobbs, R., Roxburgh, C., Sarrazin, H., Sands, G. and Westergren, M.: 2012, The social economy: Unlocking value and productivity through social technologies. [https://www.mckinsey.com/industries/high-tech/our-insights/ the-social-economy](https://www.mckinsey.com/industries/high-tech/our-insights/ the-social-economy) [Accessed 18 May 2019]. 
 * Darwish, K.: 2018, To kavanaugh or not to kavanaugh: That is the polarizing question, _arXiv preprint arXiv:1810.06687_ p. 01.
-* Edosomwan, S., Prakasan, S. K., Kouame, D., Watson, J. and Seymour, T.: 2011, The history of social media and its impact on business, _Journal of Applied Management and entrepreneurship_ 16(3), 79–91. 
+* Dou, W., Wang, X., Skau, D., Ribarsky, W. and Zhou, M. X.: 2012, Leadline: Interactive visual analysis of text data through event identification and exploration, _2012 IEEE Conference on Visual Analytics Science and Technology (VAST)_, IEEE, pp. 93–102. 
+* Edosomwan, S., Prakasan, S. K., Kouame, D., Watson, J. and Seymour, T.: 2011, The history of social media and its impact on business, _Journal of Applied Management and entrepreneurship_ 16(3), 79–91.
+* Felt, M.: 2016, Social media and the social sciences: How researchers employ big data analytics, _Big Data & Society_ 3(1).  
+* Figueiredo, F., Almeida, J. M., Gon ̧calves, M. A. and Benevenuto, F.: 2016, Trendlearner: Early prediction of popularity trends of user generated content, _Information Sciences_ 349, 172–187. 
 * Gao, Z., Shi, Y. and Chen, S.: 2015, Measures of node centrality in mobile social networks, _International Journal of Modern Physics_ C 26(09).
-* Hootsuite: 2018, Hootsuite’s social media barometer report. [https://hootsuite.com/resources/all-future_of_social-digital_in_2019-glo-en-ca-digital_in_2019-q1_2019](https://hootsuite.com/resources/barometer-2018-global?utm_campaign=all-future_of_social-digital_in_2019-glo-en-ca-digital_in_2019-q1_2019) [Accessed 18 May 2018]. 
-* Juanals, B. and Minel, J.-L.: 2017, Analysing cultural events on twitter, _International Conference on Computational Collective Intelligence_, Springer, pp. 376–385.
-* Kalmar, I., Stevens, C. and Worby, N.: 2018, Twitter, gab, and racism: the case of the soros myth, _Proceedings of the 9th International Conference on Social Media and Society_, ACM, pp. 330–334.
-* Kane, G. C.: 2015, Enterprise social media: Current capabilities and future possibilities., _MIS Quarterly Executive_ 14(1). 
-* Kaplan, A. M. and Haenlein, M.: 2010, Users of the world, unite! the challenges and opportunities of social media, _Business horizons_ 53(1), 59–68. 
-* Kasemsap, K.: 2019, Professional and business applications of social media platforms, Social Entrepreneurship: Concepts, Methodologies, Tools, and Applications, _IGI Global_, pp. 824– 847. 
-* Mahbub, M.S., de Souza, P. and Williams, R., 2017. Describing environmental phenomena variation using entropy theory. _International Journal of Data Science and Analytics_, 3(1), pp.49-60.
-* Mahbub, M.S., de Souza, P. and Williams, R., 2019. Understanding Environmental Changes Using Statistical Mechanics. _Annals of Data Science_, pp.1-13.
-* Matei, S. A. and Bruno, R. J.: 2015, Pareto’s 80/20 law and social differentiation: A social entropy perspective, _Public Relations Review_ 41(2), 178–186.
+* Gomez-Rodriguez, M., Leskovec, J. and Krause, A.: 2012, Inferring networks of diffusion and influence, _ACM Transactions on Knowledge Discovery from Data_ (TKDD) 5(4). 
+* Halasz, C. M.: 2019, Optimizing training for sparse workloads in Tensorflow. Reinforce AI Conference. **URL**: [https://reinforceconf.com/speaker/CibeleMontezHalasz](https://reinforceconf.com/speaker/CibeleMontezHalasz)
 
 ---
 
 # References
 
+* He, W., Shen, J., Tian, X., Li, Y., Akula, V., Yan, G. and Tao, R.: 2015, Gaining competitive intelligence from social media data: evidence from two largest retail chains in the world, _Industrial Management & Data Systems_ 115(9), 1622–1636.
+* Hogan, B.: 2016, Social media giveth, social media taketh away: Facebook, friendships, and apis, _International Journal of Communication_, Forthcoming. 
+* Hootsuite: 2018, Hootsuite’s social media barometer report. [https://hootsuite.com/resources/all-future_of_social-digital_in_2019-glo-en-ca-digital_in_2019-q1_2019](https://hootsuite.com/resources/barometer-2018-global?utm_campaign=all-future_of_social-digital_in_2019-glo-en-ca-digital_in_2019-q1_2019) [Accessed 18 May 2018]. 
+* Jamieson, J. and Boase, J.: 2017, Listening to social rhythms: Exploring logged interactional data through sonification, _The SAGE Handbook of Social Media Research Methods_.
+* Juanals, B. and Minel, J.-L.: 2017, Analysing cultural events on twitter, _International Conference on Computational Collective Intelligence_, Springer, pp. 376–385.
+* Kalmar, I., Stevens, C. and Worby, N.: 2018, Twitter, gab, and racism: the case of the soros myth, _Proceedings of the 9th International Conference on Social Media and Society_, ACM, pp. 330–334.
+* Kane, G. C.: 2015, Enterprise social media: Current capabilities and future possibilities., _MIS Quarterly Executive_ 14(1). 
+* Kaplan, A. M. and Haenlein, M.: 2010, Users of the world, unite! the challenges and opportunities of social media, _Business horizons_ 53(1), 59–68. 
+* Kasemsap, K.: 2019, Professional and business applications of social media platforms, Social Entrepreneurship: Concepts, Methodologies, Tools, and Applications, _IGI Global_, pp. 824– 847.
+* Liu, F., Wang, L., Johnson, H. and Zhao, H.: 2015, Analysis of network trust dynamics based 
+on the evolutionary game, Scientia Iranica. Transaction E, _Industrial Engineering_ 22(6).  
+* Mahbub, M.S., de Souza, P. and Williams, R., 2017. Describing environmental phenomena variation using entropy theory. _International Journal of Data Science and Analytics_, 3(1), pp.49-60.
+* Mahbub, M.S., de Souza, P. and Williams, R., 2019. Understanding Environmental Changes Using Statistical Mechanics. _Annals of Data Science_, pp.1-13.
+* Manovich, L.: 2011, Trending: The promises and the challenges of big social data, _Debates in the digital humanities_ 2, 460–475. 
+* Matei, S. A. and Bruno, R. J.: 2015, Pareto’s 80/20 law and social differentiation: A social entropy perspective, _Public Relations Review_ 41(2), 178–186.
+* Mayeh, M., Scheepers, R. and Valos, M.: 2012, Understanding the role of social media monitor- ing in generating external intelligence, ACIS 2012: Location, location, location: _Proceedings of the 23rd Australasian Conference on Information Systems 2012_, ACIS, pp. 1–10. 
 * Milligan, I., Ruest, N. and Lin, J.: 2016, Content selection and curation for web archiving: The gatekeepers vs. the masses, _Proceedings of the 16th ACM/IEEE-CS on Joint Conference on Digital Libraries_, ACM, pp. 107–110.
+
+---
+
+# References
+
 * Ngoc, T. H., Echizen, I., Komei, K. and Yoshiura, H.: 2010, New approach to quantification of privacy on social network sites, 2010 24th _IEEE International Conference on Advanced Information Networking and Applications_, IEEE, pp. 556–564.
 * Park, S.-H., Huh, S.-Y., Oh, W. and Han, S. P.: 2012, A social network-based inference model for validating customer profile data., _MIS quarterly_ 36(4).
 * Perrin, A.: 2015, Social media usage: 2005-2015, _PEW Research Center Report_. 
 * Pinter, A. T., Goldman, B. and Novotny, E.: 2017, Pennsylvania perspectives of the 2016 election: A project to collect web and social media content around significant societal events, _Pennsylvania Libraries: Research & Practice_ 5(2), 96–106.
+* Qian, S., Zhang, T., Xu, C. and Shao, J.: 2015, Multi-modal event topic model for social event analysis, _IEEE transactions on multimedia 18(2)_, 233–246. 
 * Ruest, N. and Milligan, I.: 2016, An open-source strategy for documenting events: The case study of the 42nd canadian federal election on twitter, _Code4Lib_ 32.
 * Sapountzi, A. and Psannis, K. E.: 2018, Social networking data analysis tools & challenges, _Future Generation Computer Systems_ 86, 893–913.
 * Schmidt, C. W.: 2012, Trending now: using social media to predict and track disease outbreaks.
+* Schroeder, R.: 2014, Big data and the brave new world of social media research, _Big Data & 
+Society_ 1(2).
+* Sloan, L. and Quan-Haase, A.: 2017, The SAGE handbook of social media research methods, 
+Sage.
+* Stieglitz, S., Mirbabaie, M., Ross, B. and Neuberger, C.: 2018, Social media analytics–challenges in topic discovery, data collection, and data preparation, _International journal of information management_ 39, 156–168. 
 * Tsou, M.H., 2015. Research challenges and opportunities in mapping social media and Big Data. _Cartography and Geographic Information Science_, 42(sup1), pp.70-74.
 * Van Dijck, J. and Poell, T.: 2013, Understanding social media logic, _Media and communication_ 1(1), 2–14. 
+* Weller, K. and Kinder-Kurlanda, K. E.: 2015, Uncovering the challenges in collection, sharing and documentation: The hidden data of social media research?, _Ninth International AAAI Conference on Web and Social Media_. 
 * Zhao, X., Lampe, C. and Ellison, N. B.: 2016, The social media ecology: User perceptions, strategies and challenges, _Proceedings of the 2016 CHI conference on human factors in computing systems_, ACM, pp. 89–100. 
 * Zhi-Xiao, W., Ze-chao, L., Xiao-fang, D. and Jin-hui, T.: 2016, Overlapping community detection based on node location analysis, _Knowledge-Based Systems_ 105, 225–235.
 * Zhou, F., Huang, W., Zhao, Y., Shi, Y., Liang, X. and Fan, X.: 2015, Entvis: a visual analytic tool for entropy-based network traffic anomaly detection, _IEEE Computer Graphics and Applications_ 35(6), 42–50.
