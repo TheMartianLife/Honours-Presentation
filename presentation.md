@@ -101,13 +101,11 @@ header-strong: #FFFFFF
 * Jump on bandwagons
 * Prevent impending harmful content trends
 
-![right fit](assets/reqs.png)
-
 ---
 
 # Challenges
 
-* Privacy concerns
+* Subjectivity of viewing, sharing content
 * False positives in anomaly detection-based methods<sup>16</sup>
 * Reliance on other information sources in alternative methods<sup>17</sup>
 * Timeliness requirements for analysis and detection<sup>18</sup>
@@ -309,29 +307,7 @@ This can help identify new context or **anomalous trends**.
 
 ---
 
-![](assets/twarc.png)
-
----
-
-# Why Twarc?
-
-* made by researchers (from the _Documenting the Now_ project)
-* many researchers have used it for studies before, establishing its robustness as a tool<sup>31 - 38</sup>
-* many have made tools for analysis and visualisation that work with it[^**], so integration issues are not so worrisome
-
-[^**]: examples such as [Twarc Report by Peter Binkley](https://github.com/pbinkley/twarc-report) and [Twarc Cloud by Justin Littman](https://github.com/justinlittman/twarc-cloud)
-
----
-
-![](assets/split-files3.jpg)
-
----
-
 ![fit](assets/split-files2.png)
-
----
-
-![](assets/pipeline.png)
 	
 ---
 
@@ -355,6 +331,28 @@ This can help identify new context or **anomalous trends**.
    "favorite_count": 50
 }
 ```
+
+---
+
+![](assets/twarc.png)
+
+---
+
+# Why Twarc?
+
+* made by researchers (from the _Documenting the Now_ project)
+* many researchers have used it for studies before, establishing its robustness as a tool<sup>31 - 38</sup>
+* many have made tools for analysis and visualisation that work with it[^**], so integration issues are not so worrisome
+
+[^**]: examples such as [Twarc Report by Peter Binkley](https://github.com/pbinkley/twarc-report) and [Twarc Cloud by Justin Littman](https://github.com/justinlittman/twarc-cloud)
+
+---
+
+![](assets/split-files3.jpg)
+
+---
+
+![](assets/pipeline.png)
 
 ---
 
@@ -387,14 +385,12 @@ This can help identify new context or **anomalous trends**.
 
 ---
 
-# ⚠️ Issues
+# ⚠️ Issues with historical data
 
 1. Retweeted tweets show no information about whether likes were given to original or retweet
 2. Engagement metrics are associated with time of posting, even though they would have occurred later and over time
 
 It is assumed that the presence of both effects in **both the test and comparison data** will nullify the effect. 
-
-*But* this study can only assert indicative suitability for historical data until verified with a live study.
 
 ---
 
