@@ -40,12 +40,6 @@ header-strong: #FFFFFF
 
 # Social Media Analysis
 
-![](assets/insights.jpg)
-
----
-
-# Goals
-
 * Understand the network structure of platforms, how people connect (**social network analysis**, **behavioural research**)
 * Understand the content being generated and shared among platforms, how people react to and propagate it (**content and sentiment analysis**, **information diffusion theories**)
 * Understand where particular interest comes from, the determinants and effects of popular topics (**topic analysis**, **trend analysis**)
@@ -69,13 +63,11 @@ header-strong: #FFFFFF
 
 ---
 
-# Trend Analysis & Prediction
+# [fit] Trend Analysis & Prediction
+
+# ![40% inline](assets/trend.png)
 
 ![](assets/stocks.jpg)
-
----
-
-![55%](assets/trend.png)
 
 ---
 
@@ -115,9 +107,9 @@ header-strong: #FFFFFF
 
 ---
 
-# [fit] Social media analysis 
-# [fit] requires some new
-# [fit] ways of thinking![^*]
+# Social media analysis 
+# requires some new
+# ways of thinking![^*]
 
 [^*]: see 15, 20-22
 
@@ -274,17 +266,11 @@ This can help identify new context or **anomalous trends**.
 1. Representing a **single** cohesive topic growing over time
 2. Representing a higher-level topic with **multiple** sub-topics or evolution over time
 
----
-
-![](assets/set1.png)
+![original](assets/sets.png)
 
 ---
 
-![](assets/set2.png)
-
----
-
-![fit](assets/split-files2.png)
+![fit](assets/split-files.png)
 	
 ---
 
@@ -311,21 +297,13 @@ This can help identify new context or **anomalous trends**.
 
 ---
 
-![](assets/twarc.png)
+![original](assets/twarc.png)
 
----
-
-# Why Twarc?
+# "Hydrating" Tweets: Twarc
 
 * made by researchers (from the _Documenting the Now_ project)
 * many researchers have used it for studies before, establishing its robustness as a tool<sup>31 - 38</sup>
-* many have made tools for analysis and visualisation that work with it[^**], so integration issues are not so worrisome
-
-[^**]: examples such as [Twarc Report by Peter Binkley](https://github.com/pbinkley/twarc-report) and [Twarc Cloud by Justin Littman](https://github.com/justinlittman/twarc-cloud)
-
----
-
-![](assets/split-files3.jpg)
+* lots of visualisation and analysis tools that work with it
 
 ---
 
@@ -333,7 +311,7 @@ This can help identify new context or **anomalous trends**.
 
 ---
 
-| File | IDs | Fetched | Lost |
+| File | IDs | Hydrated | Lost |
 |:---:|:---:|:---:|:---:|
 | immigration-exec-order1 | 500,000 | 342,551 | 157,449 |
 | immigration-exec-order2 | 500,000 | 341,873 | 158,127 |
