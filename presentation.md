@@ -26,27 +26,13 @@ header-strong: #FFFFFF
 
 ---
 
-![](assets/social.jpg)
-
-# Social Media
-
----
-
 # Social Media Usage
 
-* Hundreds of platforms, growing by the year<sup>1</sup>
-* Some count users in the millions, with the most popular reaching over a billion users<sup>2</sup>
-* From 2005-2015 social media usage rose tenfold in the United States alone<sup>3</sup>
-* Of the ~4.5 billion internet users worldwide, an estimated 3.5 billion are users of social media<sup>4</sup>
-* Includes individuals, groups and businesses of all sizes<sup>5</sup>
-
----
-
-# Social Media Usage
-
-
-* Social media usage spans demographics<sup>3</sup>
-* Not just one platform; most use two or more<sup>6</sup>
+* Of the world's ~4.5 billion internet users, almost 3.5 billion use social media<sup>1</sup>
+* From 2005-2015 social media usage rose tenfold in the United States alone<sup>2</sup>
+* Hundreds of platforms, growing by the year<sup>3</sup>, most use two or more<sup>4</sup>
+* Many count users in the millions, with some reaching over a billion users<sup>2</sup>
+* Social media usage spans demographics<sup>5</sup>; includes individuals, groups and businesses of all sizes<sup>6</sup>
 * Critical to maintaining a competitive edge in business<sup>7</sup>
 * Has fundamentally changed the way humanity communicates<sup>8</sup>
 
@@ -58,7 +44,7 @@ header-strong: #FFFFFF
 
 ---
 
-# The Goals
+# Goals
 
 * Understand the network structure of platforms, how people connect (**social network analysis**, **behavioural research**)
 * Understand the content being generated and shared among platforms, how people react to and propagate it (**content and sentiment analysis**, **information diffusion theories**)
@@ -66,7 +52,7 @@ header-strong: #FFFFFF
 
 ---
 
-# The Challenges
+# Challenges
 
 * Social media generates content of **enormous quantity** at speed<sup>10</sup>
 * **Semi-structured** data with **mixed media** necessary to context<sup>11</sup>
@@ -137,18 +123,18 @@ header-strong: #FFFFFF
 
 ---
 
+[.header: text-scale(3)]
+
+# 🤯
+
+---
+
 ## Novel cross-disciplinary applications
 
 * Social media trends as contagion theory from **Virology** in Medicine<sup>23 - 25</sup>
 * Social media trends as the **Technology Adoption** curve from Information Diffusion Theory<sup>26</sup>
 * Social media behaviours observed as sound (**Data Sonification**) to aid in anomaly detection<sup>27</sup>
 * Social media network interactions as **Evolutionary Game Theory** from Evolutionary Biology<sup>28</sup>
-
----
-
-[.header: text-scale(3)]
-
-# 🤯
 
 ---
 
@@ -159,6 +145,18 @@ header-strong: #FFFFFF
 ---
 
 ![](assets/equations.png)
+
+---
+
+![](assets/equations2.png)
+
+---
+
+![](assets/equations3.png)
+
+---
+
+![](assets/equations4.png)
 
 ---
 
@@ -253,13 +251,6 @@ This can help identify new context or **anomalous trends**.
 
 ---
 
-# Two main steps:
-
-## 1. Creating data
-## 2. Analysing data
-
----
-
 ![](assets/harvest.jpg)
 
 # Harvesting from Twitter
@@ -272,19 +263,9 @@ This can help identify new context or **anomalous trends**.
 
 * Rapid generation of content, rapid decline in interest<sup>17</sup> => *easily observable trends*
 * Discrete content size easier to analyse<sup>29</sup> => *more easily verifiable datasets*
-* Reasonable breadth of functionality in API, well-established tools for research<sup>30</sup> => *easier to get data, perform and recreate studies*
+* Breadth of functionality in API, well-established tools for research<sup>30</sup> => *easier to get data, perform and recreate studies*
 
----
-
-[.footer: *Nowadays this has increased, but this is still the case in the datasets I'm looking at]
-
-# Twitter Content
-
-* Posts of maximum 140 characters* (**tweets**)
-* Accompanying media of one video or up to four images
-* May include hashtags, stock tickers, tagged users
-* Metadata includes time of posting, engagements, location
-* Sharing of posts can be done verbatim (**retweets**), or with added commentary (**quote tweets**)
+![90% right](assets/robot.png)
 
 ---
 
@@ -300,10 +281,6 @@ This can help identify new context or **anomalous trends**.
 ---
 
 ![](assets/set2.png)
-
----
-
-![](assets/twitter-dev-terms.png)
 
 ---
 
@@ -356,7 +333,7 @@ This can help identify new context or **anomalous trends**.
 
 ---
 
-| File | IDs | Hydrated | Lost |
+| File | IDs | Fetched | Lost |
 |:---:|:---:|:---:|:---:|
 | immigration-exec-order1 | 500,000 | 342,551 | 157,449 |
 | immigration-exec-order2 | 500,000 | 341,873 | 158,127 |
@@ -387,7 +364,7 @@ This can help identify new context or **anomalous trends**.
 
 # ⚠️ Issues with historical data
 
-1. Retweeted tweets show no information about whether likes were given to original or retweet
+1. Shared tweets show no information about whether likes were given to original or share
 2. Engagement metrics are associated with time of posting, even though they would have occurred later and over time
 
 It is assumed that the presence of both effects in **both the test and comparison data** will nullify the effect. 
@@ -511,12 +488,12 @@ I theorised that the patterns to emerge would be two-fold:
 
 # References
 
-<sup>1</sup> Kasemsap, K.: 2019, Professional and business applications of social media platforms, Social Entrepreneurship: Concepts, Methodologies, Tools, and Applications, _IGI Global_, pp. 824– 847.
-<sup>2</sup> Kane, G. C.: 2015, Enterprise social media: Current capabilities and future possibilities., _MIS Quarterly Executive_ 14(1). 
-<sup>3</sup> Perrin, A.: 2015, Social media usage: 2005-2015, _PEW Research Center Report_.
-<sup>4</sup> Hootsuite: 2018, Hootsuite’s social media barometer report. [https://hootsuite.com/resources/all-future_of_social-digital_in_2019-glo-en-ca-digital_in_2019-q1_2019](https://hootsuite.com/resources/barometer-2018-global?utm_campaign=all-future_of_social-digital_in_2019-glo-en-ca-digital_in_2019-q1_2019) [Accessed 18 May 2018].
-<sup>5</sup> Kaplan, A. M. and Haenlein, M.: 2010, Users of the world, unite! the challenges and opportunities of social media, _Business horizons_ 53(1), 59–68. 
-<sup>6</sup> Zhao, X., Lampe, C. and Ellison, N. B.: 2016, The social media ecology: User perceptions, strategies and challenges, _Proceedings of the 2016 CHI conference on human factors in computing systems_, ACM, pp. 89–100. 
+<sup>1</sup> Hootsuite: 2018, Hootsuite’s social media barometer report. [https://hootsuite.com/resources/all-future_of_social-digital_in_2019-glo-en-ca-digital_in_2019-q1_2019](https://hootsuite.com/resources/barometer-2018-global?utm_campaign=all-future_of_social-digital_in_2019-glo-en-ca-digital_in_2019-q1_2019) [Accessed 18 May 2018].
+<sup>2</sup> Perrin, A.: 2015, Social media usage: 2005-2015, _PEW Research Center Report_.
+<sup>3</sup> Kasemsap, K.: 2019, Professional and business applications of social media platforms, Social Entrepreneurship: Concepts, Methodologies, Tools, and Applications, _IGI Global_, pp. 824– 847.
+<sup>4</sup> Zhao, X., Lampe, C. and Ellison, N. B.: 2016, The social media ecology: User perceptions, strategies and challenges, _Proceedings of the 2016 CHI conference on human factors in computing systems_, ACM, pp. 89–100. 
+<sup>5</sup> Kane, G. C.: 2015, Enterprise social media: Current capabilities and future possibilities., _MIS Quarterly Executive_ 14(1). 
+<sup>6</sup> Kaplan, A. M. and Haenlein, M.: 2010, Users of the world, unite! the challenges and opportunities of social media, _Business horizons_ 53(1), 59–68. 
 <sup>7</sup> Chui, M., Manyika, J., Bughin, J., Dobbs, R., Roxburgh, C., Sarrazin, H., Sands, G. and Westergren, M.: 2012, The social economy: Unlocking value and productivity through social technologies. [https://www.mckinsey.com/industries/high-tech/our-insights/ the-social-economy](https://www.mckinsey.com/industries/high-tech/our-insights/ the-social-economy) [Accessed 18 May 2019]. 
 <sup>8</sup> Edosomwan, S., Prakasan, S. K., Kouame, D., Watson, J. and Seymour, T.: 2011, The history of social media and its impact on business, _Journal of Applied Management and entrepreneurship_ 16(3), 79–91.
 <sup>9</sup> He, W., Shen, J., Tian, X., Li, Y., Akula, V., Yan, G. and Tao, R.: 2015, Gaining competitive intelligence from social media data: evidence from two largest retail chains in the world, _Industrial Management & Data Systems_ 115(9), 1622–1636.
