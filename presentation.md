@@ -2,11 +2,8 @@ theme: Next, 1
 autoscale: true
 header-strong: #FFFFFF
 
-<br>
 # [fit] Insights into **Social Media** Data: 
 # [fit] a new formalism inspired in **Thermodynamics**
-<br>
-![inline 143%](assets/qr.jpg)
 
 ![](assets/thermo.jpg)
 
@@ -142,15 +139,10 @@ header-strong: #FFFFFF
 
 ---
 
-## Novel applications of cross-disciplinary methods
+## Novel cross-disciplinary applications
 
 * Social media trends as contagion theory from **Virology** in Medicine<sup>23 - 25</sup>
 * Social media trends as the **Technology Adoption** curve from Information Diffusion Theory<sup>26</sup>
-
----
-
-## Novel applications of cross-disciplinary methods
-
 * Social media behaviours observed as sound (**Data Sonification**) to aid in anomaly detection<sup>27</sup>
 * Social media network interactions as **Evolutionary Game Theory** from Evolutionary Biology<sup>28</sup>
 
@@ -190,17 +182,10 @@ header-strong: #FFFFFF
 
 # The Gist
 
-* Social Media use has swept across the globe, impacting the way we communicate, conduct business and view society
-
-* Analysing behaviour on Social Media is seen as important to understanding the opportunities and risks it presents
-
-* Where current methods targeting Social Media have been lacking, a small group of studies have shown varying success in applying methods of analysis from other fields
-
----
-
-# The Gist
-
-* This study will investigate the feasibility of measures analogous of Entropy over time for trend detection, analysis and prediction
+* **Social Media** use has swept across the globe, impacting the way we communicate, conduct business and view society
+* **Data Analysis** targeting Social Media is seen as important to understanding the opportunities and risks it presents
+* Where current methods targeting Social Media have been lacking, some began applying **methods from other fields**
+* This study will investigate the feasibility of measures analogous of **Entropy** over time for trend detection, analysis and prediction
 
 ---
 
@@ -342,63 +327,23 @@ This can help identify new context or **anomalous trends**.
 
 ---
 
-```python
-# split.py (simplified)
-
-# create generator function for input file of tweet IDs
-def splitter(file, n):
-	lines = list(file)
-	for i in xrange(0, len(lines), n):
-		yield lines[i: i + n]
-
-with open(INPUT_FILENAME,'r') as input_file:
-	
-	# partition file by given size
-	for index, lines in enumerate(splitter(input_file, BATCH_SIZE)):
-		batch_filename = OUTPUT_FILENAME + str(index) + '.txt'
-
-		# write each batch to new file
-		with open(batch_filename, 'w+') as output_file:
-			output_file.write('\n'.join(lines))
-```
-
----
-
 ![fit](assets/split-files2.png)
 
 ---
 
-```python
-# hydrate.py (simplified)
-import json, twarc
-
-# create generator function for input file of tweet IDs
-def tweet_ids():
-    for id in open(INPUT_FILENAME):
-        yield id
-
-# setup Twarc with API key credentials from created Twitter Developer account
-twarc = twarc.Twarc(key, secret, token, token_secret)
-
-# fetch JSON values as dictionary from API with use of hydrate() function
-tweets_dict = { 'tweets': [] }
-for tweet in twarc.hydrate(tweet_ids):
-	tweets_dict['tweets'].append(tweet)
-
-# convert to JSON and write to output file, one line per tweet
-with open(OUTPUT_FILENAME,'w+') as output_file:
-    json.dump(tweets_dict, output_file)
+![](assets/pipeline.png)
 	
-```	
 ---
 
 # Tweet JSON
 
+![right 80%](assets/beachball.png)
+
 ```json
 {
-   "created_at":"Fri Feb 10 10:05:45 +0000 2017",
+   "created_at":"Fri Feb 10 10:05:45 2017",
    "id_str":"8299945678410624",
-   "full_text": "This is a fake Tweet because I like to err on the side of privacy.",
+   "full_text": "This is a fake Tweet.",
    "user":{
       "id_str": "972937630",
       "name": "John Doe",
@@ -433,58 +378,7 @@ with open(OUTPUT_FILENAME,'w+') as output_file:
 
 ---
 
-```python
-# tweets.py (simplified)
-import csv, jsonl
-from classes import Tweet
-
-headers = ['id', 'likes', 'retweets', 
-	'retweeted_id', 'quoted_id', 'timestamp']
-
-with open(INPUT_FILENAME, 'r') as input_file:
-	output_file = open(OUTPUT_FILENAME,'w+')
-	csv_writer = csv.writer(output_file, delimiter=',')
-	csv_writer.writerow(headers)
-
-	for line in input_file:
-		tweet = Tweet(line)
-		csv_writer.writerow(tweet.values())
-	output_file.close()
-```
-
----
-
-![100%](assets/beachball.png)
-
----
-
-```python
-# classes.py (simplified)
-import json
-
-class Tweet():
-
-	def __init__(self, tweet_object):
-        	tweet_json = json.loads(tweet_object)
-
-        	self.id = int(tweet_json["id_str"])
-        	self.likes = int(tweet_json["favorite_count"])
-        	self.retweets = int(tweet_json["retweet_count"])
-        	self.timestamp = self.process_datetime(tweet_json["created_at"])
-
-        	# RETWEET
-        	if "retweeted_status" in tweet_json:
-            		self.retweeted_id = int(tweet_json["retweeted_status"]["id_str"])
-            		self.likes = int(tweet_json["retweeted_status"]["favorite_count"])
-
-        	# QUOTE TWEET
-        	if "quoted_status" in tweet_json:
-            		self.quoted_id = int(tweet_json["quoted_status_id"])
-```
-
----
-
-# Phase 1: Exploration
+# Analysis Phase 1: Exploration
 
 * Establish "ground truth" of trend behaviour over time portrayed in each dataset 
 * Decide on appropriate granularity for discretisation of data (or justify use of full range of values)
@@ -498,10 +392,6 @@ class Tweet():
 1. Retweeted tweets show no information about whether likes were given to original or retweet
 2. Engagement metrics are associated with time of posting, even though they would have occurred later and over time
 
----
-
-# ⚠️ Issues
-
 It is assumed that the presence of both effects in **both the test and comparison data** will nullify the effect. 
 
 *But* this study can only assert indicative suitability for historical data until verified with a live study.
@@ -512,59 +402,18 @@ It is assumed that the presence of both effects in **both the test and compariso
 
 ---
 
-```python
-# collate.py (simplified)
-with open(INPUT_FILENAME, "r") as input_file:
-	csv_reader = csv.reader(input_file, delimiter=',')
-	output_files = {}
-
-	for line_number, line in enumerate(csv_reader):
-		date = line[5][0:10] # YYYY-MM-DD
-
-		if date not in output_files:
-			new_filename = OUTPUT_FILENAME + "-" + date + ".csv"
-			output_files[date] = open(new_filename,"a+")
-
-		output_file = output_files[date]
-		output_file.write(",".join(line) + '\n')
-
-for file_handle in output_files.keys():
-	file_handle.close()
-```
----
-
 ![fit](assets/dated.png)
 
 ---
 
-```python
-# entropy.py (simplified example)
-import csv, bumpy
-
-output_file = open(OUTPUT_FILENAME, 'w+')
-csv_writer = csv.writer(output_file, delimiter=',')
-cumulative_likes = 0
-likes = []
-
-for input_filename in INPUT_FILENAMES:
-	input_file = open(input_filename, 'r')
-	csv_reader = csv.reader(input_file, delimiter=',')
-
-	likes += [float(row[1]) for row in csv_reader]
-	date = input_filename[23:33] # YYYY-MM-DD
-	cumulative_likes += numpy.sum(likes)
-	csv_writer.writerow([date, str(entropy(likes)), str(cumulative_likes)])
-
-	input_file.close()
-
-output_file.close()
-```
+# [fit] `calculate_entropy(data)`
 
 ---
 
-# [fit] Phase 2: Discrete topic
+# More Analysis!
+# [fit] **Phase 2: Discrete topic**
 # &
-# [fit] Phase 3: Evolving topic
+# [fit] **Phase 3: Evolving topic**
 
 ---
 
@@ -728,12 +577,3 @@ Sage.
 * See **github.com/TheMartianLife/Honours-Presentation**
 
 ![inline 112%](assets/qr.jpg)
-
----
-
-[.background-color: #FF0000]
-[.text: #000000]
-[.header: #000000]
-
-### more slides will go here with visualisations of answers to questions that friends ask me when rehearsing
-### (that I can't justify or fit in the main presentation)
