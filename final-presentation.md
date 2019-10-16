@@ -78,7 +78,7 @@ autoscale: true
 
 # [fit] Trend Analysis & "Prediction"
 
-# ![40% inline](assets/trend.png)
+# ![40% inline](assets/trends.png)
 
 ![](assets/stocks.jpg)
 
@@ -113,7 +113,7 @@ autoscale: true
 
 ---
 
-![](assets/pipeline.png)
+![](assets/pipelines.png)
 
 ---
 
