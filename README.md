@@ -2,7 +2,7 @@
 
 These presentations were created in conjunction with an ongoing Honours project into the applicability of Entropy Theory to Social Media Analysis. The code for this project can be found [here](https://github.com/TheMartianLife/Honours-Code) and the final thesis will be made available [here](https://github.com/TheMartianLife/Honours-Thesis) when complete.
 
-## Checkpoint Presentation Bibliography
+## Bibliography
 
 <sup>1</sup> Hootsuite: 2018, Hootsuite’s social media barometer report. [https://hootsuite.com/resources/all-future_of_social-digital_in_2019-glo-en-ca-digital_in_2019-q1_2019](https://hootsuite.com/resources/barometer-2018-global?utm_campaign=all-future_of_social-digital_in_2019-glo-en-ca-digital_in_2019-q1_2019) [Accessed 18 May 2018].
 

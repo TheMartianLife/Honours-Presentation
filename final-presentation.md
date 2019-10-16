@@ -109,7 +109,7 @@ autoscale: true
 * Reliance on other information sources in alternative methods<sup>17</sup>
 * Timeliness requirements for analysis and detection<sup>18</sup>
 * Topic evolution over time<sup>19</sup>
-* Predicting the future? 🤔
+* Predicting the future?
 
 ---
 
@@ -145,6 +145,13 @@ autoscale: true
 * Social media behaviours observed as sound (**Data Sonification**) to aid in anomaly detection<sup>27</sup>
 * Social media network interactions as **Evolutionary Game Theory** from Evolutionary Biology<sup>28</sup>
 
+---
+
+[.text: #423347]
+[.footer: **Source: Mahbub, de Souza and Williams 2016**]
+[.footer-style: alignment(left)]
+
+![](assets/proposal.png)
 
 ---
 
@@ -154,12 +161,24 @@ autoscale: true
 
 ---
 
-[.background-color: #ff0000]
+![](assets/maths.png)
 
 ---
 
-[.background-color: #ff0000]
-* Aims & Objectives
+[.list: alignment(left)]
+
+# Entropy over time
+
+* Reveals descriptive statistical measures about a set of data
+* But also measures internal diversity and inconsistency
+* Takes focus away from upper and lower bounds—or even ranges—in favour of changes in internal distribution that may be more informative
+* Is in some cases sufficient to adapt analysis into Markov-model-based prediction
+
+---
+
+## Aims & Objectives
+
+![](assets/target.jpg)
 
 ---
 
@@ -184,7 +203,16 @@ Experimentation aimed to confirm dual hypotheses:
 
 ---
 
-[.background-color: #ff0000]
+[.list: alignment(left)]
+[.header: alignment(left)]
+
+# This required
+
+* data from social media platforms,
+* covering concise topics,
+* for significant periods of time, with
+* sufficiently varied trend behaviours and
+* consistent measures of engagement.
 
 ---
 
@@ -196,23 +224,56 @@ Experimentation aimed to confirm dual hypotheses:
 
 ---
 
-[.background-color: #ff0000]
-* Identifying Data
+[.list: alignment(left)]
+
+# Process
+
+1. Identifying Data
+2. Retrieving Data
+3. Preparing Data
+4. Analysing Data
+
+![right](assets/process.png)
 
 ---
 
 [.background-color: #ff0000]
-* Retrieving Data
+# Identifying Data
 
 ---
 
 [.background-color: #ff0000]
-* Preparing Data
+Why Twitter?
 
 ---
 
 [.background-color: #ff0000]
-* Analysing Data
+# Retrieving Data
+
+---
+
+# Hydration Loss
+
+| **Data Group** | **Listed** | **Hydrated** | **Lost** |
+|:---|---:|---:|---:|
+| Hurricane Harvey | 18,336,283 | 13,018,265 | 5,318,018 |
+| Hurricane Irma | 17,227,935 | 11,627,130 | 5,600,805 |
+| Immigration Travel Ban | 16,842,329 | 11,618,463 | 5,223,866 |
+| Winter Olympics | 13,787,299 | 10,567,141 | 3,220,158 |
+| Hurricane Florence | 7,756,856 | 6,432,696 | 1,324,160 |
+| Women's March | 7,263,988 | 4,526,921 | 2,737,067 |
+| Ireland Vote | 2,276,808 | 1,784,345 | 492,463 |
+| **Total** | **83,491,498** | **59,574,961** | **23,916,537** |
+
+---
+
+[.background-color: #ff0000]
+# Preparing Data
+
+---
+
+[.background-color: #ff0000]
+# Analysing Data
 
 ---
 
@@ -270,10 +331,21 @@ Demonstration of it not working
 
 # Entropy
 
-* ~~Range of datapoint~~
+* Range of datapoints
 * Volume of datapoints
 * Internal distribution
 
+---
+
+[.list: alignment(left)]
+
+# Entropy
+
+* ~~Range of datapoints~~ (made redundant)
+* Volume of datapoints (inflated)
+* Internal distribution (heavily weighted towards range lower bound)
+
+^ Only dramatic changes in distribution reflected, negating predicted responsiveness
 
 ---
 
@@ -284,6 +356,26 @@ Why couldn't this be accounted for?
 
 [.background-color: #ff0000]
 * Discussion
+
+---
+
+[.background-color: #ff0000]
+* Hypotheses aside, could this be useful?
+
+---
+
+[.list: alignment(left)]
+
+# Observed generalisations
+
+* Entropy was **higher** during periods of growth
+* Entropy **varied more** during periods of growth
+* Entropy over time **increase sped up** during periods of growth
+
+---
+
+* No apparent prediction capabilities 👎
+* Potential computationally inexpensive way to describe current behaviours 👍
 
 ---
 
