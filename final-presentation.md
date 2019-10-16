@@ -237,18 +237,50 @@ Experimentation aimed to confirm dual hypotheses:
 
 ---
 
-[.background-color: #ff0000]
-# Identifying Data
+## Identifying Data
+
+![](assets/spyglass.jpg)
+
+---
+
+[.list: alignment(left)]
+[.text-emphasis: #FFFFFF]
+
+# Twitter!
+
+* Rapid generation of content, rapid decline in interest<sup>17</sup> => *easily observable trends*
+* Discrete content size easier to analyse<sup>29</sup> => *more easily verifiable datasets*
+* Breadth of functionality in API, well-established tools for research<sup>30</sup> => *easier to get data, perform and recreate studies*
+
+![90% right](assets/bae.png)
 
 ---
 
 [.background-color: #ff0000]
-Why Twitter?
+Datasets
 
 ---
 
-[.background-color: #ff0000]
-# Retrieving Data
+## Retrieving Data
+
+![](assets/excavation.jpg)
+
+---
+
+[.list: alignment(left)]
+
+![original](assets/twarc.png)
+
+# "Hydrating" Tweets: Twarc
+
+* made by researchers (from the _Documenting the Now_ project)
+* many researchers have used it for studies before, establishing its robustness as a tool<sup>31 - 38</sup>
+
+---
+
+![](assets/fetching.png)
+
+^ Retrieving Data
 
 ---
 
@@ -267,21 +299,28 @@ Why Twitter?
 
 ---
 
-[.background-color: #ff0000]
-# Preparing Data
+## Preparing Data
+
+![](assets/food.jpg)
 
 ---
 
 [.background-color: #ff0000]
-# Analysing Data
+![](assets/preprocessing.png)
 
 ---
 
-[.background-color: #ff0000]
-
----
+## Analysing Data
 
 ![](assets/findings.jpg)
+
+---
+
+[.background-color: #ff0000]
+
+---
+
+![](assets/treasure.jpg)
 
 # Findings
 
@@ -315,6 +354,27 @@ Demonstration of it not working
 
 * **Why** didn't it work?
 * What does it not working **imply**?
+
+---
+
+[.list: alignment(left)]
+
+# Limitations of pre-existing data
+
+* Start tracking once trend is detected ⇒ **first period often significant** ⇒ little opportunity to precede growth
+* Stop tracking once plateaued ⇒ **few secondary growth periods** ⇒ little opportunity to precede change
+
+---
+
+[.list: alignment(left)]
+
+# Selected 7 Datasets
+
+* Initial growth periods not at day zero:  **4**
+* Secondary growth periods: **1**
+<br>
+<br>
+*Is this uncommon on the platforms or just in the pre-existing datasets available?*
 
 ---
 
@@ -435,8 +495,19 @@ Sage.
 
 ---
 
-[.background-color: #ff0000]
-References
+[.text: alignment(left)]
+
+# References
+
+<sup>31</sup> Milligan, I., Ruest, N. and Lin, J.: 2016, Content selection and curation for web archiving: The gatekeepers vs. the masses, _Proceedings of the 16th ACM/IEEE-CS on Joint Conference on Digital Libraries_, ACM, pp. 107–110.
+<sup>32</sup> Ruest, N. and Milligan, I.: 2016, An open-source strategy for documenting events: The case study of the 42nd canadian federal election on twitter, _Code4Lib_ 32.
+<sup>33</sup> Juanals, B. and Minel, J.-L.: 2017, Analysing cultural events on twitter, _International Conference on Computational Collective Intelligence_, Springer, pp. 376–385.
+<sup>34</sup> Palmer, A., Robinson, M. and Phillips, K. K.: 2017, Illegal is not a noun: Linguistic form for detection of pejorative nominalizations, _Proceedings of the First Workshop on Abusive Language Online_, pp. 91–100.
+<sup>35</sup> Pinter, A. T., Goldman, B. and Novotny, E.: 2017, Pennsylvania perspectives of the 2016 election: A project to collect web and social media content around significant societal events, _Pennsylvania Libraries: Research & Practice_ 5(2), 96–106.
+<sup>36</sup> Aruguete, N. and Calvo, E.: 2018, Time to #protest: Selective exposure, cascading activation, and framing in social media, _Journal of Communication_ 68(3), 480–502.
+<sup>37</sup> Darwish, K.: 2018, To kavanaugh or not to kavanaugh: That is the polarizing question, _arXiv preprint arXiv:1810.06687_ p. 01.
+<sup>38</sup> Kalmar, I., Stevens, C. and Worby, N.: 2018, Twitter, gab, and racism: the case of the soros myth, _Proceedings of the 9th International Conference on Social Media and Society_, ACM, pp. 330–334.
+<sup>39</sup> Mahbub, M.S., de Souza, P. and Williams, R., 2017. Describing environmental phenomena variation using entropy theory. _International Journal of Data Science and Analytics_, 3(1), pp.49-60.
 
 ---
 
