@@ -340,13 +340,22 @@ Experimentation aimed to confirm dual hypotheses:
 
 ---
 
-[.background-color: #ff0000]
-* Rehash aims
+## Identifying periods of significant growth
+
+![inline 100%](assets/identifying.png)
+
+(Identify point where things change ⇒ identify periods which are significant ⇒ agree where non-significant and significant period meet at an identified point)
 
 ---
 
-[.background-color: #ff0000]
-* Results
+[.background-color: #ffffff]
+![](assets/engagements.png)
+
+---
+
+
+[.background-color: #ffffff]
+![](assets/overtime.png)
 
 ---
 
@@ -354,13 +363,23 @@ Experimentation aimed to confirm dual hypotheses:
 
 ---
 
-[.background-color: #ffffff]
-![](assets/overtime.png)
+## It didn't work.
+
+![original](assets/excuse.png)
 
 ---
 
-[.background-color: #ff0000]
-Recap preliminary results, discuss pivot in datasets and wrong assumptions that made that not the case
+[.header: #423347]
+[.text: #423347]
+[.footer: Entropy **does** spike as trends begin, but only in **half** of the observed sets, probably only because **sudden volume** spikes internal distribution inconsistency, and even then not in a **consistent** or necessarily **statistically significant** way.]
+
+# Lookback
+<br>
+
+[.background-color: #ffffff]
+![left original 120%](assets/preliminary2.png)
+
+![right original 60%](assets/president.png)
 
 ---
 
@@ -382,6 +401,19 @@ Recap preliminary results, discuss pivot in datasets and wrong assumptions that 
 
 ---
 
+![](assets/attempts.png)
+
+---
+
+_"...if the facts don’t fit the theory, change the theory. But all too often it’s easier to change the facts."_
+
+---
+
+### ![inline 70%](assets/crossmark.png) Increased entropy before initial growth
+### ![inline 70%](assets/crossmark.png) Decreased entropy before trend change
+
+---
+ 
 [.list: alignment(left)]
 [.header: #423347]
 [.text: #423347]
@@ -394,16 +426,6 @@ Recap preliminary results, discuss pivot in datasets and wrong assumptions that 
 * Entropy **varied significantly** during periods of growth versus not
 * Entropy **varied more** during periods of growth
 * **Which way** variation went was **inconsistent** between datasets
-
----
-
-[.background-color: #ff0000]
-Demonstrations of it not working
-
----
-
-### ![inline 70%](assets/crossmark.png) Increased entropy before initial growth
-### ![inline 70%](assets/crossmark.png) Decreased entropy before trend change
 
 ---
 
@@ -467,6 +489,19 @@ Demonstrations of it not working
 
 [.background-color: #ff0000]
 Why couldn't this be accounted for?
+
+---
+
+[.header: #423347]
+[.text: #423347]
+[.header-strong: #a9d8c8]
+[.background-color: #ffffff]
+
+# Growth could only be determined in the context of **internal** significance
+
+![inline 120%](assets/winter-error.png)
+
+(So it falls down when something like this happens, where a human might say **almost all of this** was significant growth)
 
 ---
 
@@ -597,7 +632,7 @@ Sage.
 
 ![](assets/thermo.jpg)
 
-![inline 140%](assets/qr.jpg)
+![inline 120%](assets/qr.jpg)
 
 All images are CC0, Pixabay-licensed or my own
 See **github.com/TheMartianLife/Honours-Presentation**
