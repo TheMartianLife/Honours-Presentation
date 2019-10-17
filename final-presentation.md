@@ -256,8 +256,11 @@ Experimentation aimed to confirm dual hypotheses:
 
 ---
 
-[.background-color: #ff0000]
-Datasets
+## Harvard & GW University researcher verified!
+
+![inline 100%](assets/tweetsets.png)
+
+**Selected topics**: Hurricane Florence, Hurricane Harvey, Immigration Travel Ban, Ireland 8th Amendment Vote, Hurricane Irma, Winter Olympics, Women's March
 
 ---
 
@@ -349,6 +352,11 @@ Datasets
 
 [.background-color: #ff0000]
 Demonstration of it not working
+
+---
+
+### ![inline 70%](assets/crossmark.png) Increased entropy before initial growth
+### ![inline 70%](assets/crossmark.png) Decreased entropy before trend change
 
 ---
 
