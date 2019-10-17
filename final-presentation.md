@@ -313,13 +313,22 @@ Experimentation aimed to confirm dual hypotheses:
 
 ---
 
+[.footer: _"Finally, after literal months of tweaking scripts and babysitting a live data pipeline 24/7, now I just have to confirm my hypotheses!"_]
+
 ## Analysing Data
 
 ![](assets/findings.jpg)
 
 ---
 
-[.background-color: #ff0000]
+[.list: alignment(left)]
+
+# Comparing Distributions
+
+* **Partitioning Data** ⇒ Segmented multiple regression, correlated with significant value thresholding, different bucketing values
+* **Assessing Data** ⇒ Conventional descriptive statistics, tests of central tendency, visualisation and exploration
+* **Comparing Groups** ⇒ Appropriate non-parametric tests for goodness-of-fit, equal medians, expected variance
+* **Manipulating Scales** ⇒ Negating proposed baseline or previous values to assess variation
 
 ---
 
@@ -346,12 +355,50 @@ Experimentation aimed to confirm dual hypotheses:
 ---
 
 [.background-color: #ffffff]
-![](assets/variation.png)
+![](assets/overtime.png)
 
 ---
 
 [.background-color: #ff0000]
-Demonstration of it not working
+Recap preliminary results, discuss pivot in datasets and wrong assumptions that made that not the case
+
+---
+
+[.background-color: #ffffff]
+![](assets/variation.png)
+
+---
+
+[.background-color: #ffffff]
+[.header: #423347]
+
+# "Hey what if I tried...?"
+![inline 150%](assets/logn.png)
+
+---
+
+[.background-color: #ffffff]
+![](assets/overtimebase.png)
+
+---
+
+[.list: alignment(left)]
+[.header: #423347]
+[.text: #423347]
+[.background-color: #ffffff]
+
+# Observed generalisations
+
+![inline 85%](assets/entropy-medians.png) ![inline 85%](assets/entropy-variation-median.png) ![inline 85%](assets/baseline-variance.png)
+
+* Entropy **varied significantly** during periods of growth versus not
+* Entropy **varied more** during periods of growth
+* **Which way** variation went was **inconsistent** between datasets
+
+---
+
+[.background-color: #ff0000]
+Demonstrations of it not working
 
 ---
 
@@ -371,6 +418,7 @@ Demonstration of it not working
 
 * Start tracking once trend is detected ⇒ **first period often significant** ⇒ little opportunity to precede growth
 * Stop tracking once plateaued ⇒ **few secondary growth periods** ⇒ little opportunity to precede change
+* Scale not shared between available datasets 
 
 ---
 
@@ -423,7 +471,12 @@ Why couldn't this be accounted for?
 ---
 
 [.background-color: #ff0000]
-* Discussion
+Insufficient data volume. No ability to compare with non-trending topics.
+
+---
+
+[.background-color: #ff0000]
+* Further discussion
 
 ---
 
@@ -432,22 +485,42 @@ Why couldn't this be accounted for?
 
 ---
 
-[.list: alignment(left)]
-
-# Observed generalisations
-
-* Entropy was **higher** during periods of growth
-* Entropy **varied more** during periods of growth
-* Entropy over time **increase sped up** during periods of growth
-
----
+[.background-color: #ff0000]
 
 * No apparent prediction capabilities 👎
-* Potential computationally inexpensive way to describe current behaviours 👍
+* Potential computationally inexpensive way to describe current behaviours? (maybe) 👍 
 
 ---
 
 [.background-color: #ff0000]
+Context! Significance of implications!
+
+---
+
+[.list: alignment(left)]
+
+# What is known
+
+* There is still need for **computationally inexpensive methods** of gaining insight from social media data
+* Cross-disciplinary applications still show promise due to many disciplines having their own foundational methods for **complex data summarisation**
+* Entropy Theory is potentially not the solution here, unless **new procedures for data preparation** are developed that negate the skewing effect of sparse data and low medians 
+
+---
+
+[.list: alignment(left)]
+[.background-color: #ff0000]
+
+# What experimentation should try next
+
+* Performance may differ in application to **live data** analysis as opposed to retrospective
+* Entropy-based analysis may be more useful in **early-stage trend detection** as opposed to the more nebulous continued trend behaviour prediction
+* 
+
+---
+
+[.background-color: #ff0000]
+
+Suggestions for future work.
 
 ---
 
