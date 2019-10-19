@@ -308,7 +308,6 @@ Experimentation aimed to confirm dual hypotheses:
 
 ---
 
-[.background-color: #ff0000]
 ![](assets/preprocessing.png)
 
 ---
@@ -328,7 +327,7 @@ Experimentation aimed to confirm dual hypotheses:
 * **Partitioning Data** ⇒ Segmented multiple regression, correlated with significant value thresholding, different bucketing values
 * **Assessing Data** ⇒ Conventional descriptive statistics, tests of central tendency, visualisation and exploration
 * **Comparing Groups** ⇒ Appropriate non-parametric tests for goodness-of-fit, equal medians, expected variance
-* **Manipulating Scales** ⇒ Negating proposed baseline or previous values to assess variation
+* **Manipulating Scales** ⇒ Negating proposed baseline or previous values to assess variation, testing bucketing values
 
 ---
 
@@ -381,6 +380,8 @@ Experimentation aimed to confirm dual hypotheses:
 
 ![right original 60%](assets/president.png)
 
+^ This was a day after I finished fetching a single dataset, before I knew the data well or duplicates were accounted for.
+
 ---
 
 [.background-color: #ffffff]
@@ -426,6 +427,10 @@ _"...if the facts don’t fit the theory, change the theory. But all too often i
 * Entropy **varied significantly** during periods of growth versus not
 * Entropy **varied more** during periods of growth
 * **Which way** variation went was **inconsistent** between datasets
+
+---
+
+### ![inline 70%](assets/crossmark.png) Useful patterns beyond the hypotheses
 
 ---
 
@@ -475,6 +480,7 @@ _"...if the facts don’t fit the theory, change the theory. But all too often i
 
 ---
 
+[.footer: (And this couldn't be accounted for by removing zero-value observations, as it dramatically reduced data volume, skewed activity metrics and made the values being operated on too small to reach significance)]
 [.list: alignment(left)]
 
 # Entropy
@@ -484,11 +490,6 @@ _"...if the facts don’t fit the theory, change the theory. But all too often i
 * Internal distribution (heavily weighted towards range lower bound)
 
 ^ Only dramatic changes in distribution reflected, negating predicted responsiveness
-
----
-
-[.background-color: #ff0000]
-Why couldn't this be accounted for?
 
 ---
 
@@ -505,30 +506,10 @@ Why couldn't this be accounted for?
 
 ---
 
-[.background-color: #ff0000]
-Insufficient data volume. No ability to compare with non-trending topics.
+# ![inline 40%](assets/box.png)
 
----
-
-[.background-color: #ff0000]
-* Further discussion
-
----
-
-[.background-color: #ff0000]
-* Hypotheses aside, could this be useful?
-
----
-
-[.background-color: #ff0000]
-
-* No apparent prediction capabilities 👎
-* Potential computationally inexpensive way to describe current behaviours? (maybe) 👍 
-
----
-
-[.background-color: #ff0000]
-Context! Significance of implications!
+### **Limited data volume and options ⇒**
+#### No ability to compare with non-trending topics, pre- and post-trend behaviours on a greater scale, etc.
 
 ---
 
@@ -543,19 +524,24 @@ Context! Significance of implications!
 ---
 
 [.list: alignment(left)]
-[.background-color: #ff0000]
+
+# What this study contributed
+
+* A whole bunch of nicely documented Python code, bundled up in an appropriately-licensed **Open Source software** bundle released for public use
+* Knowledge of many things that do not work that now don't need to be tried in the future
+* More examples for future work to cite, justifying interest in analogous methods for social media data analysis or cross-disciplinary application of Entropy Theory
+* A conference talk at PyCon Australia that has already **sparked similar work** in the Australian data science community
+
+---
+
+[.list: alignment(left)]
 
 # What experimentation should try next
 
 * Performance may differ in application to **live data** analysis as opposed to retrospective
-* Entropy-based analysis may be more useful in **early-stage trend detection** as opposed to the more nebulous continued trend behaviour prediction
-* 
-
----
-
-[.background-color: #ff0000]
-
-Suggestions for future work.
+* Entropy-based analysis may be more useful in **early-stage trend detection** as opposed to the more nebulous ongoing trend behaviour prediction
+* Incorporation of **additional information** (if possible) than that available via the Twitter platform API
+* Applicability to **other platforms** that may exhibit different content consumption and sharing behaviours
 
 ---
 
