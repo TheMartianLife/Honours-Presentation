@@ -432,6 +432,8 @@ _"...if the facts don’t fit the theory, change the theory. But all too often i
 
 ### ![inline 70%](assets/crossmark.png) Useful patterns beyond the hypotheses
 
+^ It was really kind of soul-crushing, actually.
+
 ---
 
 * **Why** didn't it work?
@@ -513,10 +515,15 @@ _"...if the facts don’t fit the theory, change the theory. But all too often i
 
 ---
 
+![](assets/assumptions.png)
+
+---
+
 [.list: alignment(left)]
 
 # What is known
 
+* **Engagement behaviour does not work the way it had been assumed** for seven key example trends on Twitter
 * There is still need for **computationally inexpensive methods** of gaining insight from social media data
 * Cross-disciplinary applications still show promise due to many disciplines having their own foundational methods for **complex data summarisation**
 * Entropy Theory is potentially not the solution here, unless **new procedures for data preparation** are developed that negate the skewing effect of sparse data and low medians 
@@ -527,8 +534,9 @@ _"...if the facts don’t fit the theory, change the theory. But all too often i
 
 # What this study contributed
 
-* A whole bunch of nicely documented Python code, bundled up in an appropriately-licensed **Open Source software** bundle released for public use
-* Knowledge of many things that do not work that now don't need to be tried in the future
+* A whole bunch of nicely documented Python code, bundled up in an appropriately-licensed **Open Source software** bundle released for public use that is applicable to broader Twitter content analysis.
+* Knowledge of many aspects of a method that did not work that now don't need to be tried in the future
+* Academic research that illustrates the trend engagement behaviours of these datasets, and to support industry-led reporting of Twitter engagement behaviours
 * More examples for future work to cite, justifying interest in analogous methods for social media data analysis or cross-disciplinary application of Entropy Theory
 * A conference talk at PyCon Australia that has already **sparked similar work** in the Australian data science community
 
